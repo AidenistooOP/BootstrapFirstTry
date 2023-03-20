@@ -19,16 +19,35 @@
     </div>
   </nav>
 
-
-  <div class="container p-5 bg-secondary my-5 border">
-    <h1>My First Bootstrap Page</h1>
-    <p data-bs-toggle="tooltip" title="Hooray!">This container has a border and some extra padding and margins.</p>
+  <div class="section mt-5">
+    <div class="container ">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-8">
+          <div id="main" class="card">
+            <div class="card-body bg-secondary">
+              <h1> Todo List in Bootstrap 5</h1>
+              <form id="task-form">
+                <div class="form-group"> <label for="task">New Task</label> <input type="text" class="form-control"
+                    name="task" id="task" placeholder="Name ..."> </div> <button type="submit"
+                  class="btn btn-dark mt-2">Add task </button>
+              </form>
+              <hr>
+              <h5> Tasks </h5>
+              <div class="form-group"> <label for="filter">Filter tasks</label> <input type="email" class="form-control"
+                  name="filter" id="filter" placeholder=" Task ..."> </div>
+              <div>
+                <ul class="list-group pr-0">
+                  <!-- <li class="list-group-item d-flex align-items-center"> Task 1 <i class="fas fa-times text-danger mr-auto delete-item"></i> </li> -->
+                </ul>
+              </div> <button type="submit" class="clear-tasks btn btn-dark mt-3"> Clear Tasks</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="container p-5 my-5 bg-dark text-white">
-    <h1>My First Bootstrap Page</h1>
-    <p>This container has a dark background color and white text, and some extra padding and margins.</p>
-  </div>
+  <script src="script.js"></script>
 
 </body>
 
